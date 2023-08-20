@@ -8,7 +8,6 @@ This repository contains a collection of Java programs that I've been working on
 - [Programs](#programs)
 - [Getting Started](#getting-started)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 

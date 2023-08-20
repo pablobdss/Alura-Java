@@ -32,10 +32,6 @@ If you're interested in exploring any of the programs, feel free to navigate to 
 
 While this repository is primarily for my own practice and learning, I appreciate any feedback or suggestions you might have. If you notice any issues, improvements, or would like to discuss any of the programs, please feel free to open an issue or even submit a pull request.
 
-## License
-
-This repository is licensed under the [MIT License](LICENSE). You're welcome to use the code provided here for educational purposes or to contribute, but please review the license for full details.
-
 Happy coding!
 
 [Alura](https://www.alura.com.br) - Empowering Your Knowledge

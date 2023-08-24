@@ -10,10 +10,10 @@ public class Main {
         meuFilme.avalia(5);
         meuFilme.avalia(10);
 
-        System.out.println(meuFilme.somaDasAvaliacoes / meuFilme.totalDeavaliacoes);
+        System.out.println(meuFilme.somaDasAvaliacoes);
         System.out.println(meuFilme.totalDeavaliacoes);
-
-
+        
+        System.out.println(meuFilme.pegaMedia());
 
     }   
 }

@@ -1,26 +1,32 @@
+package screenmatchModelos;
+
 public class Filme {
-    String nome;
-    int anoDelancamento;
-    boolean incluidoNoPlano;
+    private String nome;
+    private int anoDelancamento;
+    private boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
     private int totalDeavaliacoes;
-    int duracaoEmMinutos;
+    private int duracaoEmMinutos;
 
     public int getTotalDeavaliacoes() {
         return totalDeavaliacoes;
     }
 
-    void exibeFichaTecnica(){
+    public void setNome (String nome){
+        this.nome = nome;
+    }
+
+    public void exibeFichaTecnica(){
         System.out.println("Nome do filme " + nome);
         System.out.println("Ano de Lançamento " + anoDelancamento);
     }
 
-    void avalia(double nota){
+    public void avalia(double nota){
         somaDasAvaliacoes += nota;
         totalDeavaliacoes++;
     }
 
-    double pegaMedia(){
+    public double pegaMedia(){
         return somaDasAvaliacoes / totalDeavaliacoes;
     }
 }   

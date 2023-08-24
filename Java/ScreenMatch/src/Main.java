@@ -1,3 +1,5 @@
+import screenmatchModelos.Filme;
+
 public class Main {
     public static void main(String[] args) {
         Filme meuFilme= new Filme();
@@ -10,8 +12,10 @@ public class Main {
         meuFilme.avalia(5);
         meuFilme.avalia(10);
 
-        System.out.println(meuFilme.somaDasAvaliacoes);
-        System.out.println(meuFilme.totalDeavaliacoes);
+        System.out.println("Total de avaliações: " + meuFilme.getTotalDeavaliacoes());
+
+        //System.out.println(meuFilme.somaDasAvaliacoes);
+       //System.out.println(meuFilme.totalDeavaliacoes);
         
         System.out.println(meuFilme.pegaMedia());
 

@@ -3,7 +3,7 @@ import screenmatchModelos.Filme;
 public class Main {
     public static void main(String[] args) {
         Filme meuFilme= new Filme();
-        meuFilme.nome = "Diel e as cachorras";
+        meuFilme.setNome("Diel e as cachorras");
         meuFilme.anoDelancamento = 2023;
         meuFilme.duracaoEmMinutos = 180;
 

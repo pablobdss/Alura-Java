@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args) {
         Filme meuFilme= new Filme();
         meuFilme.setNome("Diel e as cachorras");
-        meuFilme.anoDelancamento = 2023;
-        meuFilme.duracaoEmMinutos = 180;
+        meuFilme.setAnoDeLancamento(1970);
+        meuFilme.setDuracaoEmMinutos(180);
 
         meuFilme.exibeFichaTecnica();
         meuFilme.avalia(8);

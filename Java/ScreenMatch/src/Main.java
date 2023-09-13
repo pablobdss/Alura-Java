@@ -1,8 +1,12 @@
+import screenmatchModelos.Episodio;
 import screenmatchModelos.Filme;
+import screenmatchModelos.Serie;
+import screenmatchCalculos.CalculadoraDeTempo;
+import screenmatchCalculos.FiltroRecomedacao;
 
 public class Main {
     public static void main(String[] args) {
-        Filme meuFilme= new Filme();
+        Filme meuFilme = new Filme();
         meuFilme.setNome("Diel e as cachorras");
         meuFilme.setAnoDeLancamento(1970);
         meuFilme.setDuracaoEmMinutos(180);
@@ -14,10 +18,40 @@ public class Main {
 
         System.out.println("Total de avaliações: " + meuFilme.getTotalDeavaliacoes());
 
-        //System.out.println(meuFilme.somaDasAvaliacoes);
-       //System.out.println(meuFilme.totalDeavaliacoes);
-        
-        System.out.println(meuFilme.pegaMedia());
 
+        Serie lost = new Serie();
+
+        lost.setNome("Lost");
+        lost.setAnoDeLancamento(2000);
+        lost.exibeFichaTecnica();
+        lost.setTemporadas(10);
+        lost.setEpisodiosPorTemporada(10);
+        lost.setMinutosPorEpisodio(50);
+
+        System.out.println("Duração para maratonar Lost: "  + lost.getDuracaoEmMinutos()); 
+
+        Filme outroFilme = new Filme();
+        outroFilme.setNome("Avatar");
+        outroFilme.setAnoDeLancamento(2023);
+        outroFilme.setDuracaoEmMinutos(200);
+
+        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+        calculadora.inclui(meuFilme);
+        calculadora.inclui(outroFilme);
+        calculadora.inclui(lost);
+
+        System.out.println(calculadora.getTempoTotal());
+
+        FiltroRecomedacao filtro = new FiltroRecomedacao();
+
+        filtro.filtra(meuFilme);
+        
+        Episodio episodio = new Episodio();
+
+        episodio.setNumero(1);
+        episodio.setSerie(lost);
+        episodio.setTotalVisualizacoes(300);
+
+        filtro.filtra(episodio);
     }   
 }

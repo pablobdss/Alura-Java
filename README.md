@@ -17,9 +17,9 @@ Welcome to my Java practice repository! As I progress through Alura's Java cours
 
 Here's a list of the programs I've worked on so far:
 
-1. [Guessing Game](/guessing-game) - A simple number guessing game.
-2. [Temperature Converter](/temperature-converter) - Converts temperatures between Celsius and Fahrenheit.
-3. [Bank Account](/bank-account) - Simulated bank account operations.
+1. [Guessing Game](/advinhacao) - A simple number guessing game.
+2. [Temperature Converter](/temperatura) - Converts temperatures between Celsius and Fahrenheit.
+3. [Bank Account](/ContaBancaria) - Simulated bank account operations.
 
 ... (more to be added)
 

@@ -6,7 +6,6 @@ This repository contains a collection of Java programs that I've been working on
 
 - [Introduction](#introduction)
 - [Programs](#programs)
-- [Getting Started](#getting-started)
 - [Contributing](#contributing)
 
 ## Introduction

@@ -24,10 +24,6 @@ Here's a list of the programs I've worked on so far:
 
 ... (more to be added)
 
-## Getting Started
-
-If you're interested in exploring any of the programs, feel free to navigate to the respective directories and check out the source code. Each program will have its own `README.md` file with instructions on how to run and use the program.
-
 ## Contributing
 
 While this repository is primarily for my own practice and learning, I appreciate any feedback or suggestions you might have. If you notice any issues, improvements, or would like to discuss any of the programs, please feel free to open an issue or even submit a pull request.

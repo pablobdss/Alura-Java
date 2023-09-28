@@ -31,5 +31,3 @@ While this repository is primarily for my own practice and learning, I appreciat
 Happy coding!
 
 [Alura](https://www.alura.com.br) - Empowering Your Knowledge
-
-Feel free to customize this template to fit your actual progress and experiences while learning Java on Alura.

@@ -7,7 +7,7 @@ import screenmatchCalculos.FiltroRecomedacao;
 public class Main {
     public static void main(String[] args) {
         Filme meuFilme = new Filme();
-        meuFilme.setNome("Diel e as cachorras");
+        meuFilme.setNome("Diel");
         meuFilme.setAnoDeLancamento(1970);
         meuFilme.setDuracaoEmMinutos(180);
 

@@ -1,6 +1,9 @@
 import screenmatchModelos.Episodio;
 import screenmatchModelos.Filme;
 import screenmatchModelos.Serie;
+
+import java.util.ArrayList;
+
 import screenmatchCalculos.CalculadoraDeTempo;
 import screenmatchCalculos.FiltroRecomedacao;
 
@@ -53,5 +56,13 @@ public class Main {
         episodio.setTotalVisualizacoes(300);
 
         filtro.filtra(episodio);
+
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(meuFilme);
+        listaDeFilmes.add(outroFilme);
+        System.out.println(listaDeFilmes.size());
+        System.out.println("Primeiro filme "+ listaDeFilmes.get(0).getNome());
+        System.out.println(listaDeFilmes);
+        System.out.println(listaDeFilmes.get(0).toString());
     }   
 }

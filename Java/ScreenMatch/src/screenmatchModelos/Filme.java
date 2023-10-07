@@ -3,8 +3,13 @@ package screenmatchModelos;
 import screenmatchCalculos.Classificavel;
 
 public class Filme extends Titulo implements Classificavel{
-    private String diretor;
 
+    public Filme(String nome, int anoDelancamento) {
+        super(nome, anoDelancamento);
+    }
+
+    private String diretor;
+ 
     public String getDiretor() {
         return diretor;
     }

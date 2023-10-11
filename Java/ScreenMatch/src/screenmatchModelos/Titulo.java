@@ -1,8 +1,12 @@
 package screenmatchModelos;
 
+import com.google.gson.annotations.SerializedName;
 public class Titulo implements Comparable <Titulo>{
+    @SerializedName("Title")
     private String nome;
+    @SerializedName("Year")
     private int anoDelancamento;
+
     private boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
     private int totalDeavaliacoes;
@@ -64,9 +68,14 @@ public class Titulo implements Comparable <Titulo>{
         return somaDasAvaliacoes / totalDeavaliacoes;
     }
 
-
     @Override
     public int compareTo(Titulo outroTitulo) {
         return this.getNome().compareTo(outroTitulo.getNome());
+    }
+
+    @Override
+    public String toString(){
+        return String.format("Nome: %s \nAno de lancamento: %d", nome, anoDelancamento);
+
     }
 }

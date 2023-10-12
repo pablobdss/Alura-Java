@@ -1,10 +1,7 @@
 package screenmatchModelos;
 
-import com.google.gson.annotations.SerializedName;
 public class Titulo implements Comparable <Titulo>{
-    @SerializedName("Title")
     private String nome;
-    @SerializedName("Year")
     private int anoDelancamento;
 
     private boolean incluidoNoPlano;
@@ -17,7 +14,16 @@ public class Titulo implements Comparable <Titulo>{
         this.anoDelancamento = anoDelancamento;
     }
 
-    
+    public Titulo(TituloOmdb meuTituloOmdb) {
+        this.nome = meuTituloOmdb.title();
+
+        if(meuTituloOmdb.year().length() > 4){
+            throw new ErroDeConversaoDeAnoException("Nao foi possivel converter o ano, pois possui mais de 04 caracteres");
+        }
+        this.anoDelancamento = Integer.valueOf(meuTituloOmdb.year());
+        this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().substring(0, 3));
+    }
+
     public String getNome(){
         return nome;
     }
@@ -75,7 +81,7 @@ public class Titulo implements Comparable <Titulo>{
 
     @Override
     public String toString(){
-        return String.format("Nome: %s \nAno de lancamento: %d", nome, anoDelancamento);
+        return String.format("Nome: (%s) \nAno de lancamento: (%d) \nDuracao do filme: (%d)\n", nome, anoDelancamento, duracaoEmMinutos);
 
     }
 }

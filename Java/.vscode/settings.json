@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "ScreenMatch/src/screenmatachDependeces/gson-2.10.1.jar",
+        "CepSearch/app/src/cepDependeces/gson-2.10.1.jar"
+    ]
+}

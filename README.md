@@ -24,8 +24,6 @@ Here's a list of the programs I've worked on so far:
 6. [MinhasMusicas](Java/MinhasMusicas/src/minhasmusicasPrincipal/Principal.java) - A music and podcast reviewer through their reviews.
 7. [CreditCard](Java/CreditCard/src/Main.java) - A credit card statement simulator.
 
-... (more to be added)
-
 ## Contributing
 
 While this repository is primarily for my own practice and learning, I appreciate any feedback or suggestions you might have. If you notice any issues, improvements, or would like to discuss any of the programs, please feel free to open an issue or even submit a pull request.

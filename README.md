@@ -20,6 +20,9 @@ Here's a list of the programs I've worked on so far:
 2. [Temperature Converter](Java/Project_B/src/exercise/temperatura.java) - Converts temperatures between Celsius and Fahrenheit.
 3. [Bank Account](Java/Project_B/src/exercise/ContaBancaria.java) - Simulated bank account operations.
 4. [ScreenMatch](Java/ScreenMatch/src/Main.java) - Streaming website project from Alura (on development).
+5. [CepSearch](Java/CepSearch/app/src/cepMain/Main.java)  - Zip code finder using ViaCep API.
+6. [MinhasMusicas](Java/MinhasMusicas/src/minhasmusicasPrincipal/Principal.java) - A music and podcast reviewer through their reviews.
+7. [CreditCard](Java/CreditCard/src/Main.java) - A credit card statement simulator.
 
 ... (more to be added)
 
